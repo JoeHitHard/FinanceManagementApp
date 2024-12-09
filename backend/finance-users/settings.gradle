@@ -1,0 +1,2 @@
+rootProject.name = 'finance-users'
+includeBuild '../finance-core'

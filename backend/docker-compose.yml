@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  fin-trackr-transaction-service:
+    build:
+      context: ./finance-transaction
+      dockerfile: Dockerfile
+    depends_on:
+      - postgres
+    ports:
+      - "8081:8081"
+    networks:
+      - fin-trackr-network
+
+  fin-trackr-user-service:
+    build:
+      context: ./finance-users
+      dockerfile: Dockerfile
+    depends_on:
+      - postgres
+    ports:
+      - "8082:8082"
+    networks:
+      - fin-trackr-network
+
+  postgres:
+    build: .
+    image: postgres
+    container_name: postgresdb
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: finTrackr
+      POSTGRES_USER: finTrackr
+      POSTGRES_PASSWORD: finTrackr
+    networks:
+      - fin-trackr-network
+
+networks:
+  fin-trackr-network:
+    driver: bridge

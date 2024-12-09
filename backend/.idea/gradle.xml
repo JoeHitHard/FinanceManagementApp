@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/finance-core" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/finance-core" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <compositeConfiguration>
+          <compositeBuild compositeDefinitionSource="SCRIPT">
+            <builds>
+              <build path="$PROJECT_DIR$/finance-core" name="finance-core">
+                <projects>
+                  <project path="$PROJECT_DIR$/finance-core" />
+                </projects>
+              </build>
+            </builds>
+          </compositeBuild>
+        </compositeConfiguration>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/finance-transaction" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/finance-core" />
+            <option value="$PROJECT_DIR$/finance-transaction" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <compositeConfiguration>
+          <compositeBuild compositeDefinitionSource="SCRIPT">
+            <builds>
+              <build path="$PROJECT_DIR$/finance-core" name="finance-core">
+                <projects>
+                  <project path="$PROJECT_DIR$/finance-core" />
+                </projects>
+              </build>
+            </builds>
+          </compositeBuild>
+        </compositeConfiguration>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/finance-users" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/finance-core" />
+            <option value="$PROJECT_DIR$/finance-users" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>
